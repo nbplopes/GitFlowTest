@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'wf_segoe-ui_light';
+    src: url('//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot');
+    src: url('//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot?#iefix') format('embedded-opentype'),url('//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.woff') format('woff'),url('//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.ttf') format('truetype'),url('//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.svg#web') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#content {
+    /* Enables scrolling and disables margin collapsing between #content and its descendants */
+    overflow: auto;
+
+    height: 100%;
+}
+body {
+    overflow: hidden; /* Disable margin collapsing between body and its descendants */
+    -webkit-transform: translate3d(0, 0, 0); /*force hardware acceleration*/
+}
+
+.box { padding: 8px; }
+
+::-webkit-scrollbar {
+    background-color:transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border:1px solid rgba(220,220,220, 0.3);
+}
+
+.win-searchbox ::-webkit-scrollbar 
+{
+    background-color:white;
+}
+
+.win-searchbox ::-webkit-scrollbar-thumb
+{
+    border:1px solid gray;
+    background-color:silver;
+}
+
+a, a:visited, a:hover, a:active {
+    cursor:pointer;
+    color: rgba(212, 14, 136, 1);
+}
+
+.win-listview .win-viewport { 
+    -webkit-overflow-scrolling: touch; 
+}
+
+.win-listview .win-itemsblock,
+.win-listview .win-vertical .win-itemscontainer,
+.win-listview .win-vertical .win-itemsblock:not(.win-clip) {
+        margin:0;
+        padding:0;
+}
