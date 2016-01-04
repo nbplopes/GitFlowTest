@@ -29,7 +29,7 @@
 
 #app .win-splitview-pane-closed .win-splitviewcommand-label {
     /*  Make sure pane content doesn't scroll if 
-    SplitViewCommand label receives focus while pane is closed.
+    SplitViewCommands label receives focus while pane is closed.
     */
     visibility: hidden;
 }
